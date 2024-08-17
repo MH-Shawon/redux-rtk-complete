@@ -18,9 +18,9 @@ const AddTaskModal = ({ isOpen, setIsOpen }) => {
   };
 
   return (
-    <Modal isOpen={isOpen} setIsOpen={setIsOpen} title="Programming Hero">
+    <Modal isOpen={isOpen} setIsOpen={setIsOpen} title="Shawon's Task">
       <form onSubmit={handleSubmit(onSubmit)}>
-        <div className="flex flex-col mb-5">
+        <div className="flex flex-col mb-3">
           <label htmlFor="title" className="mb-2">
             Title
           </label>
@@ -31,7 +31,7 @@ const AddTaskModal = ({ isOpen, setIsOpen }) => {
             {...register('title')}
           />
         </div>
-        <div className="flex flex-col mb-5">
+        <div className="flex flex-col mb-3">
           <label htmlFor="title" className="mb-2">
             Description
           </label>
@@ -42,7 +42,7 @@ const AddTaskModal = ({ isOpen, setIsOpen }) => {
             {...register('description')}
           />
         </div>
-        <div className="flex flex-col mb-5">
+        <div className="flex flex-col mb-3">
           <label htmlFor="title" className="mb-2">
             Deadline
           </label>
@@ -53,7 +53,7 @@ const AddTaskModal = ({ isOpen, setIsOpen }) => {
             {...register('date')}
           />
         </div>
-        <div className="flex flex-col mb-5">
+        <div className="flex flex-col mb-3">
           <label htmlFor="title" className="mb-2">
             Assign to
           </label>
@@ -62,22 +62,17 @@ const AddTaskModal = ({ isOpen, setIsOpen }) => {
             id="assignedTo"
             {...register('assignedTo')}
           >
-            <option value="Mir Hussain">Mir Hussain</option>
-            <option value="Mezba Abedin">Mezba Abedin</option>
-            <option value="Nahid Hasan">Nahid Hasan</option>
-            <option value="Mizanur Rahman">Mizanur Rahman</option>
-            <option value="Tanmoy Parvez">Tanmoy Parvez</option>
-            <option value="Fahim Ahmed Firoz">Fahim Ahmed Firoz</option>
-            <option value="Rahatul Islam">Rahatul Islam</option>
-            <option value="Samin Israr Ravi">Samin Israr Ravi</option>
-            <option value="Mehedi Anik">Mehedi Anik</option>
-            <option value="Ehtisam Haq">Ehtisam Haq</option>
-            <option value="Anisur Rahman">Anisur Rahman</option>
-            <option value="Muktadir Hasan">Muktadir Hasan</option>
-            <option value="Masud Alam">Masud Alam</option>
+            <option value="MH Shawon">MH Shawon</option>
+            <option value="Motaher Himu">Motaher Himu</option>
+            <option value="Mohiuddin Shahed">Mohiuddin Shahed</option>
+            <option value="Arif Modric">Arif Modric</option>
+            <option value="Al Sakib">Al Sakib</option>
+            <option value="Anamul KDB">Anamul KDB Firoz</option>
+            <option value="Aminul kroos">Aminul kroos</option>
+            <option value="Refat Shelby">Refat Shelby</option>
           </select>
         </div>
-        <div className="flex flex-col mb-5">
+        <div className="flex flex-col mb-3">
           <label htmlFor="title" className="mb-2">
             Priority
           </label>
@@ -93,7 +88,7 @@ const AddTaskModal = ({ isOpen, setIsOpen }) => {
             <option value="low">Low</option>
           </select>
         </div>
-        <div className="flex gap-3 justify-end">
+        <div className="flex justify-end gap-3">
           <button
             onClick={() => onCancel()}
             type="button"
